@@ -1,0 +1,58 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - make_reservation
+  - undo_reservation
+  - verify_reservation
+
+responses:
+  utter_commands:
+    - text: "I can make, undo or verify a reservation."
+
+  utter_greet:
+    - text: "Hi there! I'm a Rasa bot for restaurant reservations. What can I do for you?"
+    - text: "Hello. How can I be useful?"
+    - text: "Hello. How can I be helpful?"
+    - text: "Hi, Rasa bot here. Would you like to make/undo or verify a reservation?"
+
+  utter_goodbye:
+    - text: "I hope I was useful. See you next time!"
+    - text: "Thanks for using Rasa bot solution. Goodbye!"
+    - text: "Hope see you again soon. Cheers!"
+    - text: "Remember, I'm always here. See you!"
+    - text: "Until next time!"
+
+  utter_affirm:
+    - text: "Ok."
+    - text: "Okay."
+    - text: "For sure."
+    - text: "Absolutely."
+
+  utter_great_affirm:
+    - text: "Great choice!"
+    - text: "That sounds perfect."
+
+  utter_deny:
+    - text: "Unfortunately it will not be possible."
+    - text: "Sorry, but I'm not able to do it."
+  
+  utter_make_reservation:
+    - text: "Great! Who it's for?"
+    - text: "Very good. Can you say the name of the person who will own this reservation?"
+    - text: "Very well. Please, can you provide a name for the reservation?"
+  
+  utter_reservation_reference:
+    - text: "Please, provide the reservation name."
+    - text: "Can you inform the reservation name?"
+    - text: "Reservation name, please."
+    - text: "Please, say the reservation name."
+
+  utter_table_size:
+    - text: "How many people will you need the reservation for?"
+    - text: "How many guests will be in your group?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
