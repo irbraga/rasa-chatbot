@@ -1,0 +1,10 @@
+## intent: provide_time
+- [at six](time)
+- [at seven and half](time)
+- [eight o'clock](time)
+- [midday](time)
+- [fifteen past nine](time)
+- [twenty to eight](time)
+- [half past three](time)
+- [half to 6](time)
+- [4:30](time)

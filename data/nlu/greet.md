@@ -1,0 +1,14 @@
+## intent: greet
+- hey
+- hello
+- hi
+- good morning
+- good evening
+- hey there
+- good night
+- good morning
+- good afternoon
+- good afternon
+- good evening
+- what is up?
+- what's up?

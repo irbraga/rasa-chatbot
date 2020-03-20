@@ -1,0 +1,12 @@
+## intent: deny
+- no
+- never
+- I don't think so
+- don't like that
+- no way
+- not really
+- I dont agree with you
+- I don't agree with you
+- not good
+- not good enough
+- nay

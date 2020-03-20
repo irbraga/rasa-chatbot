@@ -1,0 +1,14 @@
+## intent: make_reservation
+- would you make me a [reservation](reservation), please?
+- would you reserve me a [table](reservation:reservation), please?
+- can I reserve a [table](reservation:reservation), please?
+- I will be grateful if you reverse me a [table](reservation:reservation).
+- I want a [table](reservation:reservation), please
+- I want a [reservation](reservation), please
+- I appreciate if you make me a [reservation](reservation), please
+- I will be happy if you make me a [reservation](reservation)
+- make me a [reservation](reservation)
+- reserve me a [table](reservation:reservation)
+- I will be glad if you reserve me a [table](reservation:reservation)
+- book me a [table](reservation:reservation)
+- book me a [reservation](reservation)

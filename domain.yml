@@ -1,14 +1,27 @@
 intents:
+  - help_user
   - greet
   - goodbye
-  - affirm
+  - affirmation
   - deny
   - make_reservation
   - undo_reservation
   - verify_reservation
+  - provide_name
+  - provide_table_size
+  - provide_date
+  - provide_time
+
+entities:
+  - reservation
+  - name
+  - table_size
+  - reservation_date
+  - time
+  - week_day
 
 responses:
-  utter_commands:
+  utter_help_user:
     - text: "I can make, undo or verify a reservation."
 
   utter_greet:
@@ -24,32 +37,51 @@ responses:
     - text: "Remember, I'm always here. See you!"
     - text: "Until next time!"
 
-  utter_affirm:
+  utter_affirmation:
     - text: "Ok."
     - text: "Okay."
     - text: "For sure."
     - text: "Absolutely."
-
-  utter_great_affirm:
     - text: "Great choice!"
     - text: "That sounds perfect."
+    - text: "Great!"
+    - text: "Very good."
+    - text: "Very well."
 
   utter_deny:
     - text: "Unfortunately it will not be possible."
     - text: "Sorry, but I'm not able to do it."
   
-  utter_make_reservation:
-    - text: "Great! Who it's for?"
-    - text: "Very good. Can you say the name of the person who will own this reservation?"
-    - text: "Very well. Please, can you provide a name for the reservation?"
+  utter_undo_reservation:
+    - text: "Of course. Can you provide me the reservation name?"
   
-  utter_reservation_reference:
+  utter_verify_reservation:
+    - text: "Who made the reservation?"
     - text: "Please, provide the reservation name."
     - text: "Can you inform the reservation name?"
     - text: "Reservation name, please."
     - text: "Please, say the reservation name."
 
-  utter_table_size:
+  utter_reservation_completed:
+    - text: "Your reservation is completed."
+
+  utter_provide_name:
+    - text: "Please, provide the reservation name."
+    - text: "Can you inform the reservation name?"
+    - text: "Reservation name, please."
+    - text: "Please, say the reservation name."
+    - text: "Who is it for?"
+    - text: "Please, can you provide a name for the reservation?"
+    - text: "Can you say the name of the person who will own this reservation?"
+
+  utter_provide_date:
+    - text: "Which day of the week you will join us?"
+
+  utter_provide_time:
+    - text: "Please, specify a hour."
+    - text: "...and at what time?"
+
+  utter_provide_table_size:
     - text: "How many people will you need the reservation for?"
     - text: "How many guests will be in your group?"
 

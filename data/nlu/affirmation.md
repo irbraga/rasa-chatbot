@@ -1,0 +1,18 @@
+## intent: affirmation
+- yes
+- indeed
+- of course
+- that sounds good
+- that sounds correct
+- correct
+- yay
+- I agree
+- perfect
+- very good
+- great
+- amazing
+- wonderful
+- that's cool
+- absolutely
+- reasonable
+- fairly good
