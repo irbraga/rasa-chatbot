@@ -6,7 +6,6 @@
   - utter_provide_name
 * provide_name
   - utter_affirmation
-  - action_hello_world
   - utter_provide_date
 * provide_date
   - utter_provide_time
