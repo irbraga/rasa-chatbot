@@ -1,9 +1,9 @@
-## greet > help_user > make_reservation > provide_name > provide_date > provide_time > provide_table_size > goodbye
+## greet > help_user > reservation_make > provide_name > provide_date > provide_time > provide_table_size > goodbye
 * greet
   - utter_greet
 * help_user
   - utter_help_user
-* make_reservation
+* reservation_make
   - utter_affirmation
   - utter_provide_name
 * provide_name

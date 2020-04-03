@@ -1,4 +1,4 @@
-## intent: verify_reservation
+## intent: reservation_verify
 - check my [reservation](reservation)
 - check a [reservation](reservation)
 - verify a [reservation](reservation)

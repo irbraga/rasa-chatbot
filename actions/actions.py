@@ -20,6 +20,10 @@ class ActionHelloWorld(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
+        reservation_name = tracker.get_slot("name")
+
+        print("Reserved for -> {}".format(reservation_name))
+
         dispatcher.utter_message(text="Hello World!")
 
         return []

@@ -1,4 +1,4 @@
-## intent: make_reservation
+## intent: reservation_make
 - would you make me a [reservation](reservation), please?
 - would you reserve me a [table](reservation:reservation), please?
 - can I reserve a [table](reservation:reservation), please?
