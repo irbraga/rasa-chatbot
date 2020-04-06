@@ -6,12 +6,13 @@
 * reservation_make
   - utter_affirmation
   - utter_provide_name
-* provide_name
+* provide_name{"name": "Adam"}
+  - slot{"name": "Adam"}
   - utter_affirmation
   - utter_provide_date
-* provide_date
+* provide_date{"reservation_date": "tomorrow"}
   - utter_provide_time
-* provide_time
+* provide_time{"reservation_time": "19h o'clock"}
   - utter_provide_table_size
 * provide_table_size
   - utter_reservation_completed

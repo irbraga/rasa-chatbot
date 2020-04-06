@@ -17,11 +17,9 @@ entities:
   - name
   - table_size
   - reservation_date
+  - reservation_time
   - time
   - week_day
-
-actions:
-  - action_hello_world
 
 slots:
   name:
@@ -89,7 +87,7 @@ responses:
     - text: "Which day of the week you will join us {name}?"
 
   utter_provide_time:
-    - text: "Please, specify a hour."
+    - text: "Please, specify an hour."
     - text: "...and at what time?"
 
   utter_provide_table_size:

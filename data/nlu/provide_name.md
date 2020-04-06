@@ -7,3 +7,7 @@
 - The table is for [Lyanna Stark](name)
 - Here is [Jon Favreau](name)
 - It's for [Roger](name)
+- [Adam](name)
+- [Julian McKenzie](name)
+- I am [Valerio](name)
+- It's for [Ayrton](name), please.
