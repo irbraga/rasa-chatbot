@@ -1,4 +1,5 @@
 intents:
+  - gratitude
   - help_user
   - greet
   - goodbye

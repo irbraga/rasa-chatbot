@@ -3,3 +3,9 @@ __pycache__
 venv/
 *.html
 models/
+rasa-x/auth
+rasa-x/certs
+rasa-x/credentials
+rasa-x/db
+rasa-x/logs
+rasa-x/terms
