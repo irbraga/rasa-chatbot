@@ -1,0 +1,65 @@
+version: "3"
+
+services: 
+
+    rasa-tracker:
+        image: postgres:12
+        container_name: rasa-tracker
+        restart: always
+        environment: 
+            POSTGRES_PASSWORD: postgres
+        volumes: 
+            - ./tracker-db:/var/lib/postgresql/data
+        networks: 
+            - rasa-local-network
+
+    rasa-worker:
+        depends_on: 
+            - rasa-tracker
+        image: rasa/rasa:1.9.5
+        container_name: rasa-worker
+        restart: always
+        volumes: 
+            - ./app-worker/models:/app/models
+            - ./app-worker/logs:/app/logs
+            - ./app-worker/credentials.yml:/app/credentials.yml
+            - ./app-worker/endpoints.yml:/app/endpoints.yml
+        user: root
+        command: >
+            run
+            -m models
+            --cors "*"
+            --enable-api
+            --endpoints endpoints.yml
+            --log-file logs/rasa-worker-api-server.log
+        ports: 
+            - 5005:5005
+        networks: 
+            - rasa-local-network
+    
+    rasa-prod:
+        depends_on: 
+            - rasa-tracker
+        image: rasa/rasa:1.9.5
+        container_name: rasa-prod
+        restart: always
+        volumes: 
+            - ./app-prod/models:/app/models
+            - ./app-prod/logs:/app/logs
+            - ./app-prod/credentials.yml:/app/credentials.yml
+            - ./app-prod/endpoints.yml:/app/endpoints.yml
+        user: root
+        command: >
+            run
+            -m models
+            --cors "*"
+            --enable-api
+            --endpoints endpoints.yml
+            --log-file logs/rasa-prod-api-server.log
+        ports: 
+            - 6005:5005
+        networks: 
+            - rasa-local-network
+networks:
+    rasa-local-network:
+        driver: bridge

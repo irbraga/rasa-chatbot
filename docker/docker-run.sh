@@ -1,0 +1,1 @@
+docker run --rm --name rasa-worker -v $(pwd)/app-worker/models:/app/models -v $(pwd)/app-worker/credentials.yml:/app/credentials.yml -v $(pwd)/app-worker/endpoints.yml:/app/endpoints.yml -p 5005:5005 -u root rasa/rasa:1.9.5 run --cors "*" --enable-api --endpoints endpoints.yml --log-file rasa-worker-api-server.log
